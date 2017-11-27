@@ -16,4 +16,6 @@ global_parameter: enable
 dummy: 5.2
 my_enum: 1
 verbosity: info
-subparam: subparamtest1
+subparam1: subparamtest1
+subparam2: subparamtest2
+subparam3: subparamtest3
