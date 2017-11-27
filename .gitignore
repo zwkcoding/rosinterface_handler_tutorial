@@ -1,0 +1,27 @@
+*.pyc
+.idea
+
+### CMake ###
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+## Folders and custom rules
+build
+lib
+bin
+
+# clion project files
+.idea/
+
+# git conflicts file
+*.orig
+
+# ignore log files
+*.log
+
+# ignore cmake build folder
+cmake-build-*/
