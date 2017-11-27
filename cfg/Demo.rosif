@@ -2,13 +2,15 @@
 from rosinterface_handler.interface_generator_catkin import *
 gen = InterfaceGenerator()
 
+gen.add("rate", paramtype="int",description="Rate for timer", default=2, min=1, max=10, configurable=True)
+
 # Parameters with different types
 gen.add("int_param", paramtype="int", description="An Integer parameter")
 gen.add("double_param", paramtype="double",description="A double parameter")
 gen.add("str_param", paramtype="std::string", description="A string parameter",  default="Hello World")
 gen.add("bool_param", paramtype="bool", description="A Boolean parameter")
-gen.add("vector_param", paramtype="std::vector<double>", description="A vector parameter")
-gen.add("map_param", paramtype="std::map<std::string,std::string>", description="A map parameter")
+#gen.add("vector_param", paramtype="std::vector<double>", description="A vector parameter")
+#gen.add("map_param", paramtype="std::map<std::string,std::string>", description="A map parameter")
 
 # Default min and max values
 gen.add("weight", paramtype="double",description="Weight can not be negative", min=0.0)
@@ -21,10 +23,10 @@ gen.add("map_string_float", paramtype="std::map<std::string,float>", description
 
 # Constant and configurable parameters
 gen.add("optimal_parameter", paramtype="double", description="Optimal parameter, can not be set via rosinterface", default=10, constant=True)
-gen.add("configurable_parameter", paramtype="double", description="This parameter can be set via dynamic_reconfigure", configurable=True)
+#gen.add("configurable_parameter", paramtype="double", description="This parameter can be set via dynamic_reconfigure", configurable=True)
 
 # Defining the namespace
-gen.add("global_parameter", paramtype="std::string", description="This parameter is defined in the global namespace", global_scope=True)
+#gen.add("global_parameter", paramtype="std::string", description="This parameter is defined in the global namespace", global_scope=True)
 
 # Full signature
 gen.add("dummy", paramtype="double", description="My Dummy parameter", level=0,
@@ -40,8 +42,8 @@ my_group = gen.add_group("my_group")
 my_group.add("subparam", paramtype="std::string", description="This parameter is part of a group", configurable=True)
 
 # Create subscribers/publishers
-gen.add_subscriber("my_subscriber", message_type="std_msgs::Header", description="subscriber", configurable=True)
-gen.add_publisher("my_publisher", message_type="std_msgs::Header", description="publisher", default_topic="publisher_topic")
+#gen.add_subscriber("my_subscriber", message_type="std_msgs::Header", description="subscriber", configurable=True)
+#gen.add_publisher("my_publisher", message_type="std_msgs::Header", description="publisher", default_topic="publisher_topic")
 
 # Logging
 gen.add_verbosity_param(configurable=True)

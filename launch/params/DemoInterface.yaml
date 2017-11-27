@@ -1,0 +1,19 @@
+### This file was generated using the rosinterface_handler generate_yaml script.
+rate: 2
+int_param: 1
+double_param: 12.0
+str_param: Hello World
+bool_param: True
+vector_param: [1.0, 2.0, 3.4]
+map_param: {"a": "b", "c": "d"}
+weight: 50.0
+age: 23
+default_param: Hello World
+vector_bool: [False, True, True, False, True]
+map_string_float: {'a': 0.1, 'c': 2.3, 'b': 1.2, 'e': 4.5, 'd': 3.4}
+configurable_parameter: 10.0
+global_parameter: enable
+dummy: 5.2
+my_enum: 1
+verbosity: info
+subparam: subparamtest1

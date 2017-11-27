@@ -1,0 +1,17 @@
+<launch>
+
+  <arg name="config" default="$(find rosinterface_handler_tutorial)/launch/params/DemoInterface.yaml" />
+
+  <node pkg="rosinterface_handler_tutorial" type="demo" name="demo" output="screen">
+    <param name="int_param" value="1" type="int" />
+    <param name="double_param" value="1.0" type="double" />
+    <param name="bool_param" value="True" type="bool" />
+    <param name="weight" value="50.0" type="double" />
+    <param name="age" value="23" type="int" />
+    <param name="configurable_parameter" value="20.0" type="double" />
+    <param name="subparam" value="hello, zwk" type="str" />
+  </node>
+
+  <node name="reconfigure_gui" pkg="rqt_reconfigure" type="rqt_reconfigure" />
+
+</launch>

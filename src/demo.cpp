@@ -27,8 +27,7 @@ namespace rosinterface_handler_tutorial {
  * The Ptr type guarantees zero copy transportation within nodelets.
  */
     void Demo::timerCallback(const ros::TimerEvent& event) {
-        ROS_INFO_STREAM("Timer callback. configurable_parameter = " << interface_.configurable_parameter
-                                                                    << ". Enum: " << interface_.my_enum);
+        ROS_INFO_STREAM("Timer callback.  Enum: " << interface_.my_enum);
     }
 
 /**
