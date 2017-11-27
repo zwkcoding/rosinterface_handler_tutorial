@@ -47,4 +47,4 @@ gen.add_publisher("my_publisher", message_type="std_msgs::Header", description="
 gen.add_verbosity_param(configurable=True)
 
 #Syntax : Package, Node, Config Name(The final name will be MyDummyConfig)
-exit(gen.generate("rosinterface_tutorials", "demo_node", "Demo"))
+exit(gen.generate("rosinterface_handler_tutorial", "demo_node", "Demo"))

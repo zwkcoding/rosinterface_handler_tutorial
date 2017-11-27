@@ -2,6 +2,7 @@
 // Created by kevin on 11/27/17.
 //
 
+#include "rosinterface_handler_tutorial/demo.hpp"
 
 int main(int argc, char* argv[]) {
 
