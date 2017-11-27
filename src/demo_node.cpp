@@ -2,7 +2,6 @@
 // Created by kevin on 11/27/17.
 //
 
-#include "demo.hpp"
 
 int main(int argc, char* argv[]) {
 

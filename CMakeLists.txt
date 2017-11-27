@@ -15,7 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 # Generate interface files
-generate_ros_parameter_files(cfg/Demo.rosif)
+generate_ros_interface_files(cfg/Demo.rosif)
 
 catkin_package(
         INCLUDE_DIRS include
